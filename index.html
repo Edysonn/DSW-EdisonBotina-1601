@@ -4,28 +4,355 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fase_2</title>
 </head>
-<style>
-    *{
-        text-align: center;
-        background-color: blueviolet;
-        color: white;
-    }
-</style>
 <body>
-    <h1> Bienvenido a mis sitio web</h1>
-    <h2> Proyecto de sitio web año 2023 - periodo 16-01</h2>
-    <hr>
-    <h3> Nombre: Edison Arquimedes Botina Jojoa </h3>
-    <h3> Programa: Ingeniería de Sistemas </h3>
-    <h3> Fecha de creación: 17 de febrero de 2023 </h3>
-    <hr>
-    <p> Mis datos de contacto son: <br>
-        Skype: edisonbotinajojoa@rocketmail.com  <br>
-        Teléfono: 3117433958 <br>
-        Email: edisonbotinajojoa@rocketmail.com, botinajojoae@gmail.com  <br>
-    </p>
-    
+    <header>    
+    <div><tr> <!--creamos dos filas con tr-->
+        <!--ingresamos el título del encabezado-->
+            <br><h1>Decubre los selectores CSS</h1>
+            <hr>
+        </tr>
+        <tr>
+             <nav><!--Se crea los enlaces de navegación-->
+                <ul><!--Lista no ordenada-->
+                    <li><!--Elemento de la lista-->
+                        <a href="#"> Inicio </a> <!--a elemento ancla
+                        y href es para insertar los enlaces internos o externos-->
+                    </li> 
+                    <li><a href="#"> Selectores CSS </a></li>
+                    <li><a href="#"> Mockup </a></li>
+                    <li><a href="#"> Acerca de </a></li>
+                </ul>  
+            </nav> 
+        </tr> 
+    </div>
+    </header>
+     <!-- style: esta etiqueta es para darle estética a la página (estilo interno) y
+    a sus demás elementos-->
+    <style> 
+   
+        div{
+           width: 98%;
+           max-width: 1500px;
+           margin: auto;
+        }
+        body{
+            background: rgb(239, 241, 241); 
+        }
+        hr{
+            margin: 1cm;
+            color: rgb(70, 65, 64);
+        }
+        *{
+            margin: 0; padding: 0;
+        }
+        h1{
+            text-align: center;
+            color:rgb(236, 229, 230);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 35px;
+            
+        }
+        header{
+            background: rgb(12, 0, 51);
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+        nav{
+            float: left;
+        }
+        nav ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        nav ul li{
+            float: left;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        nav ul li a{
+            display: block;
+            padding: 10px;
+            color: rgb(253, 253, 246);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li:hover{
+            background: rgb(244, 254, 0);
+            border-radius: 60px;
+            -webkit-transition: all 800ms ease;
+            -o-transition: all 800ms ease;
+            transition: all 800ms ease;
+            
+        }
+        nav ul li:hover a{
+            color: black;
+
+        }
+
+
+    </style> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <table>
+        <tr>
+            <td>
+                <h2>imagen</h2><br>
+                <p>
+            </td>
+            <td>
+                <h2>¿Qué son?</h2><br>
+                <p> Comprendamos un poco de fundamento. 
+                    La CSS (coding style sheets)son hojas de estilo; archivos responsables de configurar la apariencia de la página web. Todas las paginas de un mismo sitio comparten la misma hoja de estilos. A esta hoja de estilos se la conoce como un archivo con extensión .css y estas definen una o más reglas, las cuales se aplicarán a los elementos escogidos en dicha regla. Estas reglas se componen de dos partes:
+                    Selector: evidencia a qué elementos se aplicará la regla. Se puede aplicar más separándolo con una coma (,).
+                    Lista de declaraciones: son los estilos que se van a aplicar a los elementos que cumplen la regla. Su orden es esta: propiedad:valor, y se separa con un punto y coma.
+                    Los selectores css son parte de unas reglas, los cuales se indica a qué elementos se aplicará dicha orden, definiendo el estilo que se quiere dar a dichos elementos en CSS.
+                       
+            </td>
+        </tr>
+        <tr>
+            <td><hr><h2>Selector universal</h2><br>
+                <p>este selector se define como (*) y se aplica a todos los elementos de dicha página.     
+            </td>
+            <td><hr>
+                <p>imagen
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>imagn</h2><br>
+                <p>Indica el estilo que se va a un elemento o etiqueta concreto.
+            </td>
+            <td>
+                <hr><h2>Selector de etiqueta HTML</h2><br>
+                <p>se indica el estilo que se va a un elemento 
+                    o etiqueta concreto (se quita el < y > de las etiquetas).
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                <h2>Selector de clase</h2><br>
+                <p>A los elementos HTML se les puede añadir un atributo class el cual se indica las 
+                    clases a la que pertenece el elemento. 
+                    Entonces a esa clase se la permite tratar de una forma particular, 
+                    así en CSS y también en JavaScript. En CSS se puede aplicar una regla a 
+                    todos los elementos que sean de determinada clase.
+            </td>
+            <td>
+                <h2>imagen</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>imagen</h2>
+                <p>Se puede
+            </td>
+            <td><hr>
+                <h2>Selector de identificador</h2><br>
+                <p>Se puede aplicar el estilo único al único elemento de de una página, el cual tiene 
+                    un determinado identificador (especificado con el atributo id). Se especifica con
+                    # más el nombre del identificador.</p><br>
+                <p>Para este caso se crea un relleno superior al elemento y un background-color al único
+                    párrafo que se identifica como dias. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Selectores descendentes y adyacentes</h2><br>
+                <p>
+                    Permiten seleccionar elementos contenidos dentro de otros de acuerdo a la 
+                    estrucura del arbol del DOM (Model de Objeto del Documento(Interfaz de programación 
+                    para los documentos HTML y XML)). Cuando se separa dos selectores por un espacio en
+                    blanco, se aplica la regla a todos los descendientes del primer selector.
+                </p><br>
+                <p> Este selector se aplica a todos los elementos p que son descendientes de un elemento 
+                    section (pueden se descendientes de cualquier nivel).
+                </p><br>
+                <p>
+                    También el es ejemplo siguiente, se puede mezclar los selectores descendientes con los
+                    de clase o identificador. Vemos que se escribirá en rojo cualquier elemento 
+                    de la clase error que sea descendiente de un elemento section y se ve la importancia 
+                    de utilizar correctamente los espacios en blanco.
+                </p><br>
+                <p>
+                    Otro caso importante es que se puede aplicar a los descendientes directos del elemento,
+                    para ello se utiliza el símbolo > , es por eso que se aplica la fuente Verdana a los
+                    elementos p que son descendientes directos de section.
+                </p><br>
+                <p>
+                    Por último, se pueden seleccionar los elementos hermanos  (sibligs), los cuales son 
+                    los elementos que aparecen justo después de otros elementos y se utiliza el 
+                    símbolo +. en el ejemplo se puede ver que se indenta el primer párrafo que aparece
+                    justo después de un encabezado h1.
+                </p>    
+            </td>
+            <td>
+                <p>imagen</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Imagen</h2>
+            </td>
+            <td>
+                <h2>Selectores de atributos</h2><br>
+                <p>
+                    Se utilizan para seleccionar elementos en función de sus atributos. Hay cuatro tipos:
+                </p><br>
+                <p>
+                    [atributo]: elementos que tienen definido el atributo llamado atributo, independiente
+                    de su valor.
+                </p><br>
+                <p>
+                    [atributo=valor]: elementos que tienen un atributo llamado atributo con el valor
+                    especificado.
+                </p><br>
+                <p>
+                    [atributo-=valor]: elementos que tienen un atributo llamado atributo y al menos
+                    uno de los valores del atributo es el valor especificado.
+                </p><br>
+                <p>
+                    [atributo^=valor]: elementos que tienen un atributo llamado atributo y cuyo valor
+                    empieza por el valor especificado.
+                </p><br>
+                <p>
+                    [atributo$=valor]: elementos que tienen un atributo llamado atributo y cuyo valor termina
+                    por el valor especificado.
+                </p><br>
+                <p>
+                    El el ejemplo se puede dar un caso: imaginemos que necesitamos cambiar a otro color un 
+                    enlace que lleva a una HTTP seguro. y se utiliza el código visto.
+                </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Pseudoclases</h2><br>
+                <p>
+                    Hay selectores especiales donde se especifica elementos que tienen unas determinadas
+                    propiedades. Son como clases "virtuales", ya que no se especifican en el HTML, aunque
+                    representan las posiciones o estados en los que se puede encontrar un elemento mientras
+                    se visualiza en el navegador.
+                </p><br>
+                <p>
+                    En el ejemplo de al lado, podemos ver una aplicación de un valor a un elemento que 
+                    solo es el primer hijo de su padre, utilizando la pseudoclase first-child. Entonces
+                    se aplicará al primer elemenro li de una lista de viñetas ul, lo cual aparece en 
+                    color verde.
+                </p><br>
+                <p>
+                    Existen más pseudclases que ayudan a seleccionar a un hermano concreto de entre dos hijos
+                    de un elemento los cuales son:
+                </p><br>
+                <p>
+                    :nth.child(n): representa el n-ésimo hermano. Permite incluir una forma más compleja,
+                    como :nth.child(even) o :nth.child(odd), que representa dos hijos que ocupan posiciones 
+                    pares o impares (por ejemplo, hacer que las filas impares de una tabla tengan distinto
+                    color de fondo).
+                </p><br>
+                <p>
+                    nth-last-child(n): lo mismo que el anterior, pero contando desde el final.
+                </p><br>
+                <p>
+                    Estas anteriores se utilizan usualmente para crear tablas cebreadas, donde las filas
+                    pares e impares tienen apariencia diferente.
+                </p><br>
+                <p>
+                    Existen también las pseudoclases dinámicas, donde indican el estado de los elementos 
+                    cuando el usuario interactúa con ellos:
+                </p><br>
+                <p>
+                    :hover: se utiliza cuando se quiere establecer el estilo cuando el usuario coloca el 
+                    mouse sobre el elemento.
+                </p><br>
+                <p>
+                    :active: se utiliza para establecer el estilo cuando el usuario pincha sobre el 
+                    elemento o mantiene el botón del mouse pulsado sobre el.
+                </p><br>
+                <p>
+                    :focus: se utiliza para establecer el estilo cuando el elemento tiene el foco.
+                </p><br>
+                <p>
+                    Son muy usuales las pseudoclases  relacionadas con los enlaces:
+                </p><br>
+                <p>
+                    :link: establece el estilo del enlace cuando aún no se ha visitado o cuando 
+                    el usuario aún no lo ha pulsado.
+                </p><br>
+                <p>
+                    :hover: establece el estilo cuando el usuario coloca el mouse sobre el elemento.
+                </p><br>
+                <p>
+                    :active: establece el estilo cuando el usuario pincha sobre el enlace.
+                </p><br>
+                <p>
+                    a:visited: hace que el estilo de un enlace ya visitado por el usuario.
+                </p><br>
+                <p>
+                    En el ejemplo se observará lo siguiente: los enlaces del documento aparecen sin subrayar
+                    y en color verde. Al situar el mouse sobre ellos, pasan a azul y, una vez visitados, 
+                    se muestran en rojo.
+                </p><br>
+            </td>
+            <td>
+                <h2>Imagen</h2>
+            </td>
+        </tr>
+    </table> 
+    </div>
+    <style>
+        h2{
+            text-align: center;
+            font-size: 35px;
+        }
+        p{
+            width: 100%;
+            max-width: 700px;
+            text-align: justify;
+            font-size: 25px;
+        }
+        table{
+            margin: auto;
+        }
+    </style>
+    <footer>
+        <h5>&copy Copyright 2023. Unad Edison Botina. Última actualización:
+            3/marzo/2023
+        </h5>
+    </footer>
+    <!--footer es el pie de página asi que se le da estilo-->
+    <style>
+        h5{
+            color: antiquewhite;
+            width: 98%;
+            max-width: 1500px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+        footer{
+            position: relative;
+            bottom: 0;
+            height: 2.5rem;
+            background: rgb(12, 0, 51);
+            width: 100%;  
+            overflow: hidden;
+            list-style: none;
+        }
+    </style>
 </body>
 </html>
