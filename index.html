@@ -21,8 +21,8 @@
                         y href es para insertar los enlaces internos o externos-->
                     </li> 
                     <li><a href="#"> Selectores CSS </a></li>
-                    <li><a href="#"> Mockup </a></li>
-                    <li><a href="#"> Acerca de </a></li>
+                    <li><a href="#modelo"> Mockup </a></li>
+                    <li><a href="#acerca_de"> Acerca de </a></li>
                 </ul>  
             </nav> 
         </tr> 
@@ -105,42 +105,102 @@
     <br>
     <br>
     <br>
-    <div>
-    <table>
-        <tr>
-            <td>
-                <h2>imagen</h2><br>
-                <img src="img/Selectores CSS principal.JPG">
-            </td>
-            <td>
-                <h2>¿Qué son?</h2><br>
-                <p> Comprendamos un poco de fundamento. 
-                    La CSS (coding style sheets)son hojas de estilo; archivos responsables de configurar la apariencia de la página web. Todas las paginas de un mismo sitio comparten la misma hoja de estilos. A esta hoja de estilos se la conoce como un archivo con extensión .css y estas definen una o más reglas, las cuales se aplicarán a los elementos escogidos en dicha regla. Estas reglas se componen de dos partes:
-                    Selector: evidencia a qué elementos se aplicará la regla. Se puede aplicar más separándolo con una coma (,).
-                    Lista de declaraciones: son los estilos que se van a aplicar a los elementos que cumplen la regla. Su orden es esta: propiedad:valor, y se separa con un punto y coma.
-                    Los selectores css son parte de unas reglas, los cuales se indica a qué elementos se aplicará dicha orden, definiendo el estilo que se quiere dar a dichos elementos en CSS.
-                       
-            </td>
-        </tr>
-        <tr>
-            <td><hr><h2>Selector universal</h2><br>
+    <nav class="wrapper">
+        <section>
+            <table class="font">
+                <tr id="1">
+                    <td>
+                        <img src="img/Selectores CSS principal.jpg">
+                        <style>
+                            img{
+                                
+                                width: 400px; height: 300px;
+                            }
+                        </style>
+                    </td>
+                    <td>
+                        <h2>¿Qué son?</h2><br>
+                        <p id="significado"> Comprendamos un poco de fundamento. 
+                            La CSS (coding style sheets)son hojas de estilo; archivos responsables de 
+                            configurar la apariencia de la página web. Todas las paginas de un mismo 
+                            sitio comparten la misma hoja de estilos. A esta hoja de estilos se la 
+                            conoce como un archivo con extensión .css y estas definen una o más reglas, las cuales se aplicarán a los elementos escogidos en dicha regla. Estas reglas se componen de dos partes:
+                            Selector: evidencia a qué elementos se aplicará la regla. Se puede aplicar 
+                            más separándolo con una coma (,).
+                        </p><br>
+                        <p id="significado">Lista de declaraciones: son los estilos que se van a aplicar a los 
+                            elementos que cumplen la regla. Su orden es esta: propiedad:valor, y se 
+                            separa con un punto y coma.
+                            Los selectores css son parte de unas reglas, los cuales se indica a qué 
+                            elementos se aplicará dicha orden, definiendo el estilo que se quiere 
+                            dar a dichos elementos en CSS.
+                        </p>
+                        <style>
+                            p{
+                                padding-left: 50px;
+                                padding-right: 50px;
+                                padding-bottom: 50px;
+                                
+                            }
+                            .wrapper {
+                               margin:auto;
+                               width: 100%;
+                               background: #3e3f3a;
+                               z-index: 100;
+
+                            }
+                            .font{
+                                margin: 0 auto;
+                                
+                                width: 100%;
+                            }
+                        </style>
+                            
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </nav>
+    <nav class="wrapper" id="segundo">
+    <table class="font"><hr>
+        <tr id="2">
+            <td><h2>Selector universal</h2><br>
                 <p>este selector se define como (*) y se aplica a todos los elementos de dicha página.     
             </td>
-            <td><hr>
-                <p>imagen
+            <td>
+                <img src="img/selector_universal.jpg">
+                <style>
+                    img {
+                        padding-left: 80px;
+                        padding-right: 50px;
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #segundo{
+                        background: rgb(251, 240, 0);
+                    }
+                </style>
             </td>
         </tr>
+       
+    </table>
+    </nav>
+    <nav class="wrapper" id="tercero">
+    <table class="font"><hr>
         <tr>
             <td>
-                <h2>imagn</h2><br>
-                <p>Indica el estilo que se va a un elemento o etiqueta concreto.
+               <img src="img/selector_de_etiqueta_HTML.jpg">
             </td>
             <td>
-                <hr><h2>Selector de etiqueta HTML</h2><br>
+                <h2>Selector de etiqueta HTML</h2><br>
                 <p>se indica el estilo que se va a un elemento 
                     o etiqueta concreto (se quita el < y > de las etiquetas).
             </td>
         </tr>
+    </table>
+    </nav>
+    <nav class="wrapper" id="cuarto">
+    <table class="font"><hr>
         <tr>
             
             <td>
@@ -152,15 +212,18 @@
                     todos los elementos que sean de determinada clase.
             </td>
             <td>
-                <h2>imagen</h2>
+                <img src="img/selector_de_clase.jpg">
             </td>
         </tr>
+    </table>
+    </nav>
+    <nav class="wrapper" id="quinto">
+    <table class="font"><hr>
         <tr>
             <td>
-                <h2>imagen</h2>
-                <p>Se puede
+                <img src="img/selector_de_identificador.jpg">
             </td>
-            <td><hr>
+            <td>
                 <h2>Selector de identificador</h2><br>
                 <p>Se puede aplicar el estilo único al único elemento de de una página, el cual tiene 
                     un determinado identificador (especificado con el atributo id). Se especifica con
@@ -169,12 +232,16 @@
                     párrafo que se identifica como dias. 
             </td>
         </tr>
+    </table>
+    </nav>
+    <nav class="wrapper" id="sexto">
+    <table class="font"><hr>
         <tr>
             <td>
                 <h2>Selectores descendentes y adyacentes</h2><br>
                 <p>
                     Permiten seleccionar elementos contenidos dentro de otros de acuerdo a la 
-                    estrucura del arbol del DOM (Model de Objeto del Documento(Interfaz de programación 
+                    estructura del árbol del DOM (Model de Objeto del Documento (Interfaz de programación 
                     para los documentos HTML y XML)). Cuando se separa dos selectores por un espacio en
                     blanco, se aplica la regla a todos los descendientes del primer selector.
                 </p><br>
@@ -200,12 +267,19 @@
                 </p>    
             </td>
             <td>
-                <p>imagen</p>
+                <img src="img/selectores descendentes y adyacentes.JPG"><br>
+                <img src="img/selectores descendentes y adyacentes 2.JPG"><br>
+                <img src="img/selectores descendentes y adyacentes 3.JPG"><br>
+                <img src="img/selectores descendentes y adyacentes 4.JPG"><br>
             </td>
         </tr>
+    </table>
+    </nav>
+    <nav class="wrapper" id="septimo">
+    <table class="font"><hr>
         <tr>
             <td>
-                <h2>Imagen</h2>
+                <img src="img/selector_de_atributos.JPG">
             </td>
             <td>
                 <h2>Selectores de atributos</h2><br>
@@ -239,6 +313,10 @@
 
             </td>
         </tr>
+    </table>
+    </nav>
+    <nav class="wrapper" id="octavo">
+    <table class="font"><hr>
         <tr>
             <td>
                 <h2>Pseudoclases</h2><br>
@@ -309,29 +387,67 @@
                 </p><br>
             </td>
             <td>
-                <h2>Imagen</h2>
+                <img src="img/selectores_pseudoclase.JPG"><br>
+                <img src="img/selectores_pseudoclase2.JPG"><br>
             </td>
         </tr>
-    </table> 
+    </table>
+    </nav>
+    <style>
+        #tercero{
+            background: rgb(36, 184, 3);  
+                    
+        }
+        
+        #cuarto{
+            background: rgb(251, 240, 0);
+        }
+        #quinto{
+            background: rgb(255,0,0);
+        }
+        #sexto{
+            background: rgb(36, 184, 3);
+        }
+        #septimo{
+            background: rgb(0,0,255);
+        }
+    </style> 
+    <div>
+        <table ><hr id="modelo">
+            <tr><hr id="modelo"><hr><hr id="modelo"><hr id="modelo">
+                <br><a><h3>Mockup</h3></a><br><br>
+                <center>
+                    <img src="img/New Wireframe 1.png"><br><br>
+                </center>
+            </tr>
+            <style>
+                hr#modelo{
+                    margin: 1cm;
+                    color: transparent;
+                }
+            </style>
+        </table><br><br><br><br><br><br><br><br>
     </div>
     <style>
         h2{
             text-align: center;
             font-size: 35px;
+            max-width: 700px;
+        }
+        h3{
+            text-align: center;
+            font-size: 40px;
         }
         p{
             width: 100%;
-            max-width: 700px;
+            max-width: 640px;
             text-align: justify;
-            font-size: 25px;
-        }
-        table{
-            margin: auto;
+            font-size: 20px;
         }
     </style>
     <footer>
-        <h5>&copy Copyright 2023. Unad Edison Botina. Última actualización:
-            3/marzo/2023
+        <h5><a name="acerca_de"></a>&copy Copyright 2023. Unad Edison Botina. Última actualización:
+            6/marzo/2023
         </h5>
     </footer>
     <!--footer es el pie de página asi que se le da estilo-->
