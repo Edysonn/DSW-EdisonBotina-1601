@@ -49,13 +49,13 @@
         }
         h1{
             text-align: center;
-            color:rgb(236, 229, 230);
+            color:#ffffff;
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 35px;
             
         }
         header{
-            background: rgb(12, 0, 51);
+            background: #3A98B9;
             width: 100%;
             position: fixed;
             z-index: 100;
@@ -80,7 +80,7 @@
             font-weight: bold;
         }
         nav ul li:hover{
-            background: rgb(244, 254, 0);
+            background: #FFE61B;
             border-radius: 60px;
             -webkit-transition: all 800ms ease;
             -o-transition: all 800ms ease;
@@ -108,7 +108,7 @@
     <nav class="wrapper">
         <section>
             <table class="font">
-                <tr id="1">
+                <tr id="wrap">
                     <td>
                         <img src="img/Selectores CSS principal.JPG">
                         <style>
@@ -120,14 +120,16 @@
                     </td>
                     <td>
                         <h2>¿Qué son?</h2><br>
-                        <p id="significado"> Comprendamos un poco de fundamento. 
-                            La CSS (coding style sheets)son hojas de estilo; archivos responsables de 
-                            configurar la apariencia de la página web. Todas las paginas de un mismo 
-                            sitio comparten la misma hoja de estilos. A esta hoja de estilos se la 
-                            conoce como un archivo con extensión .css y estas definen una o más reglas, las cuales se aplicarán a los elementos escogidos en dicha regla. Estas reglas se componen de dos partes:
-                            Selector: evidencia a qué elementos se aplicará la regla. Se puede aplicar 
-                            más separándolo con una coma (,).
-                        </p><br>
+                        <div>
+                            <p id="significado"> Comprendamos un poco de fundamento. 
+                                La CSS (coding style sheets)son hojas de estilo; archivos responsables de 
+                                configurar la apariencia de la página web. Todas las paginas de un mismo 
+                                sitio comparten la misma hoja de estilos. A esta hoja de estilos se la 
+                                conoce como un archivo con extensión .css y estas definen una o más reglas, las cuales se aplicarán a los elementos escogidos en dicha regla. Estas reglas se componen de dos partes:
+                                Selector: evidencia a qué elementos se aplicará la regla. Se puede aplicar 
+                                más separándolo con una coma (,).
+                            </p>
+                        </div><br>
                         <p id="significado">Lista de declaraciones: son los estilos que se van a aplicar a los 
                             elementos que cumplen la regla. Su orden es esta: propiedad:valor, y se 
                             separa con un punto y coma.
@@ -139,14 +141,20 @@
                             .wrapper {
                                margin:auto;
                                width: 100%;
-                               background: #3e3f3a;
+                               background: #EEEEEE;
                                z-index: 100;
 
                             }
                             .font{
                                 margin: 0 auto;
-                                
                                 width: 100%;
+                            }
+                            p {
+                                border: #03C988 20px solid;
+                                padding: 20px;
+                                border-radius: 60px;
+                                background-color: #03C988;
+                                
                             }
                         </style>
                             
@@ -165,14 +173,14 @@
                 <img src="img/selector_universal.JPG">
                 <style>
                     img {
-                        padding-left: 80px;
-                        padding-right: 50px;
-                        padding-top: 80px;
-                        padding-bottom: 80px;
+                        margin-left: 80px;
+                        margin-right: 50px;
+                        margin-top: 80px;
+                        margin-bottom: 80px;
+                        border: #393E46 2px solid;
+                        border-radius: 20px;
                     }
-                    #segundo{
-                        background: rgb(251, 240, 0);
-                    }
+                    
                 </style>
             </td>
         </tr>
@@ -387,25 +395,7 @@
         </tr>
     </table>
     </nav>
-    <style>
-        #tercero{
-            background: rgb(36, 184, 3);  
-                    
-        }
-        
-        #cuarto{
-            background: rgb(251, 240, 0);
-        }
-        #quinto{
-            background: rgb(255,0,0);
-        }
-        #sexto{
-            background: rgb(36, 184, 3);
-        }
-        #septimo{
-            background: rgb(0,0,255);
-        }
-    </style> 
+    <nav id="mockup">
     <div>
         <table ><hr id="modelo">
             <tr><hr id="modelo"><hr><hr id="modelo"><hr id="modelo">
@@ -422,7 +412,14 @@
             </style>
         </table><br><br><br><br><br><br><br><br>
     </div>
+    </nav>
     <style>
+        nav#mockup{
+            background: #3A98B9;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
         h2{
             text-align: center;
             font-size: 35px;
@@ -451,17 +448,22 @@
             width: 98%;
             max-width: 1500px;
             margin: auto;
-            padding: 10px;
+            padding: 40px;
             text-align: center;
+            font-size: 17px;
         }
         footer{
             position: relative;
             bottom: 0;
-            height: 2.5rem;
-            background: rgb(12, 0, 51);
+            height: 3cm;
+            background: #3A98B9;
             width: 100%;  
             overflow: hidden;
             list-style: none;
+        }
+        body{
+            align-items:center;
+
         }
     </style>
 </body>
