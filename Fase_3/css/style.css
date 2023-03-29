@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&family=Bad+Script&family=Kite+One&family=Tangerine:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Voltaire";
+}
+.contenedor{
+    background-image: linear-gradient(to left, #603601,#8E3200);
+    background-size: contain;
+    display: grid;
+    grid-template-areas: 
+            'E E E E'
+            'D D D D'
+            'I S S S'
+            'O O O O';
+    
+}
+header{
+    grid-area: E;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: #ffff00;
+    padding: 2%;
+    -webkit-text-stroke: 0.1px #70fa00;
+}
+nav{
+    grid-area: D;
+    position:static;
+    background-color: #B8621B;
+    outline: 6px ridge #FF9F29;
+    border-color: 0.1px #002f41;
+    border-top-style: solid;
+
+}
+#barra_horizontal{
+    list-style-type: none;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+.izquierdo{
+    float: left;
+    padding: 6px ;
+    outline: 2px ridge #fffefc;
+    margin-left: 0.5cm;
+    margin-top: 0.4cm;
+    padding: 2%;
+    border-radius: 10px 10px 10px 10px;  
+}
+.izquierdo:hover{
+    border-radius: 20px 20px 900px 900px;
+    -webkit-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+h2{
+    color: #ECF2FF;
+    font-size: 20px;
+    text-decoration:double;
+    -webkit-text-stroke: 0.1px #f1eeee;
+    
+}
+#one{
+    background: #0423ac;
+}
+#two{
+    background: #4fa805;
+}
+#three{
+    background: #5b047e;
+}
+
+aside{
+    grid-area: I;
+    background-color: #db720f;
+    border-radius: 20px;
+    margin:0.4cm;
+    text-align: center;
+    padding: 10%;
+    outline: 6px ridge #FF9F29;
+    border-color: #663803;
+    border-style: solid;
+}
+.vertical{
+    list-style: none;
+    overflow: hidden;
+    padding: 10%;
+}
+h3{
+    color: #ffff00;
+    font-size: 18px;
+}
+.vertical:hover{
+   
+    border-radius: 1px;
+    width: 97%;
+    -webkit-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+    border-radius: 4px;    
+}
+#enlace1:hover{
+    background: #a10059;
+}
+#enlace2:hover{
+    background: #ffd901;
+}
+#enlace3:hover{
+    background: #22849c;
+}
+.audios:hover{
+    color: #004a5e;
+}
+.nosotros:hover{
+    color: #eff3f5;
+}
+main{
+    grid-area: S;
+    background-color: #ECF2FF;
+    border-radius: 20px;
+    margin:0.4cm;
+    padding: 1%;
+    outline: 6px ridge #FF9F29;
+    border-color: #011820;
+    border-style: solid;
+}
+footer{
+    grid-area: O;
+    background-color:#B8621B;
+    border-color: #011820;
+    border-style: solid;
+    border-radius: 20px 20px 900px 900px;
+    outline: 6px ridge #FF9F29;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.pie_pagina{
+    
+    font-size: 18px;
+    text-align: center;
+    color: #131312;
+    -webkit-text-stroke: 0.1px #eff3f5;
+    padding: 1%;
+}
+
+
+.color1 {color: #002f41;}
+.color2 {color: #004a5e;}
+.color3 {color: #007183;}
+.color4 {color: #00a6af;}
+.color5 {color: #00e8df;}
