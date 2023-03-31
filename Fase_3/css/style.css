@@ -35,8 +35,9 @@ nav{
 
 }
 #barra_horizontal{
-    list-style-type: none;
+    list-style: none;
     font-size: 25px;
+    display: block;
 }
 a{
     text-decoration: none;
@@ -68,6 +69,35 @@ h2{
 }
 #two{
     background: #4fa805;
+}
+#sub{
+    display:none;
+    position: absolute;
+    background-color:#4fa805;
+    outline: 4px ridge #fffefc;
+    border-color: #3e8504;
+    border-top-style: solid;
+
+}
+#two:hover{
+    border-radius: 900px 900px 20px 20px;
+    display: block;
+}
+.izquierdo:hover > #sub{
+    display: block;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+    transition: all 900ms ease;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.submenu2{
+    list-style: none;
+    display: block;
+    background: #4fa805;
+
 }
 #three{
     background: #5b047e;
