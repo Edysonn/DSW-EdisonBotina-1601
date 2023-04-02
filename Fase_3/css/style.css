@@ -221,6 +221,22 @@ footer{
     -webkit-text-stroke: 0.1px #eff3f5;
     padding: 1%;
 }
+.identifi{
+    font-size: 18px;
+    text-align: left;
+    color: #131312;
+    -webkit-text-stroke: 0.1px #eff3f5;
+    padding: 1%;
+}
+#edisonimg{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    outline: 6px ridge #db720f;
+    border-style: solid;
+    width: 100px;
+    height: 130px;
+}
 
 
 .color1 {color: #002f41;}
