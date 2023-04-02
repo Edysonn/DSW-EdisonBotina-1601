@@ -79,6 +79,16 @@ h2{
     border-top-style: solid;
 
 }
+#sub2{
+    display:none;
+    position:absolute;
+    background-color:#B8621B;
+    outline: 6px ridge #FF9F29;
+    border-color: #663803;
+    border-top-style: solid;
+    
+
+}
 #two:hover{
     border-radius: 900px 900px 20px 20px;
     display: block;
@@ -93,11 +103,29 @@ h2{
     margin-top: 10px;
 
 }
+.vertical:hover > #sub2{
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    padding: 10px;
+    margin-top: 2px;
+}
+#enlace2 :hover{
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    display: block;
+    display: grid;
+}
 .submenu2{
     list-style: none;
     display: block;
     background: #4fa805;
 
+}
+.submenu22{
+    list-style: none;
+    display: block;
+    
 }
 #three{
     background: #5b047e;
@@ -137,6 +165,9 @@ h3{
 }
 #enlace2:hover{
     background: #ffd901;
+    -webkit-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 #enlace3:hover{
     background: #22849c;
@@ -146,6 +177,20 @@ h3{
 }
 .nosotros:hover{
     color: #eff3f5;
+}
+#sub2:hover {
+    background: #B8621B;
+}
+.edison:hover{
+    color: #011216;
+    background: #db720f38;
+}
+.selecto:hover{
+    color: #011216;
+    background: #db720f38;
+    -webkit-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
 }
 main{
     grid-area: S;
@@ -164,7 +209,7 @@ footer{
     border-style: solid;
     border-radius: 20px 20px 900px 900px;
     outline: 6px ridge #FF9F29;
-    position: absolute;
+    position:relative;
     width: 100%;
     bottom: 0;
 }
