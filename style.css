@@ -194,13 +194,38 @@ h3{
 }
 main{
     grid-area: S;
-    background-color: #ECF2FF;
+    background-color: #9be4ee;
     border-radius: 20px;
     margin:0.4cm;
     padding: 1%;
     outline: 6px ridge #FF9F29;
     border-color: #011820;
     border-style: solid;
+}
+.flexBoxx{
+    display:flex;
+    flex-direction:column;
+    align-items: center;    
+}
+.MQS{
+    color: #011216;
+    margin-bottom: 10px;
+}
+#mqfont{
+    background: #9be4ee;
+}
+.CSSSEL{
+    color: #011216;
+    margin-bottom: 10px;
+}
+.grupo1{
+    color: #011820;
+}
+.listamq{
+    margin-left: 1cm;
+}
+.subtitulo{
+    color:#011820;
 }
 footer{
     grid-area: O;
@@ -228,6 +253,10 @@ footer{
     -webkit-text-stroke: 0.1px #eff3f5;
     padding: 1%;
 }
+#primerap{
+    position: fixed;
+    bottom: 0;
+}
 #edisonimg{
     margin-top: 5px;
     margin-left: 5px;
@@ -236,6 +265,48 @@ footer{
     border-style: solid;
     width: 100px;
     height: 130px;
+}
+#jhonimg{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    outline: 6px ridge #db720f;
+    border-style: solid;
+    width: 130px;
+    height: 250px;
+}
+#luisimg{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    outline: 6px ridge #db720f;
+    border-style: solid;
+    width: 110px;
+    height: 160px;
+}
+#josesimg{
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    outline: 6px ridge #db720f;
+    border-style: solid;
+    width: 190px;
+    height: 160px;
+}
+#contenido_principal{
+    display: flex;
+    flex-direction: column;
+}
+#seccionmain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.fondouna{
+    width: 550px;
+    height: auto;
+
 }
 
 

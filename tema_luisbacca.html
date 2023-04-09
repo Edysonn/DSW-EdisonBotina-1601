@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase_3</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="contenedor">
+    <header>
+        <h1> Fase 3 Diseño de sitios web UNAD Grupo 16</h1>
+    </header>
+    <nav>
+        <ul id="barra_horizontal">
+            <li class="izquierdo" id="one"> <a href="index.html"><h2 class="primero">Inicio</h2></a></li>   
+            <li class="izquierdo" id="two">               
+                <a href="#"><h2 class="segundo">Temas</h2></a>
+                <nav id="sub">
+                    <ul id="submenu1">
+                        <li class="submenu2">
+                            <a href="tema.html"><h2 class="selecto">Selectores CSS</h2></a>
+                            <a href="tema_luisbacca.html"><h2 class="selecto">Media Queries</h2></a>
+                            <a href="tema_johnarturo.html"><h2 class="selecto">CSS Box Model</h2></a>
+                            <a href="tema_joseleon.html"><h2 class="selecto">Flex Box</h2></a>
+                        </li>
+                    </ul>   
+                </nav>
+            </li>
+            <li class="izquierdo" id="three"> <a href="equipo.html"><h2 class="tercero">Equipo</h2></a></li>
+        </ul>
+    </nav>
+    <aside>
+       <ul id="barra vertical">
+        <li id="enlace1" class="vertical"><a href="index.html"><h3 class="inicio">Inicio</h3> </a></li>
+        <li id="enlace2" class="vertical"><a href="#"><h3 class="audios">Audios</h3> </a>
+            <nav id="sub2">
+                <ul id="submenu12">
+                    <li class="submenu22">
+                        <a href="audio_tema.html"><h2 class="edison">Edison Botina</h2></a>
+                        <a href="audio_tema_luisbacca.html"><h2 class="edison">Luis Bacca</h2></a>
+                        <a href="audio_tema_johnarturo.html"><h2 class="edison">Jhon Arturo</h2></a>
+                        <a href="audio_temaj_joseleon.html"><h2 class="edison">José Leon</h2></a>
+                    </li>
+                </ul>   
+            </nav>
+        </li>
+        <li id="enlace3" class="vertical"><a  href="equipo.html"><h3 class="nosotros">Nosotros</h3> </a></li>
+
+       </ul>
+    </aside>
+    <main>
+        <section>
+            <article>
+               <h1 class="grupo1">¿Que es Media Querie?</h1>
+            </article>
+            <article>
+                <p id="txt1">
+                    Una media querie es un conjunto de reglas de CSS usadas para hacer que el contenido de 
+                    una pagina web se adapte a los diferentes tipos de pantalla, resoluciones, 
+                    orientación y demás situaciones que se puedan presentar mientras se cumplan ciertas 
+                    condiciones definidas en la programación, como puede ser al pasar de visualizar una 
+                    pagina en un dispositivo con una pantalla grande a un dispositivo con pantalla pequeña 
+                    y de menor resolución.
+                    <br><br>
+                </p>
+                <p id="txt2">
+                    Entre las cosas que se pueden modificar con una media querie están las siguientes:
+                </p>
+            </article>
+            <article>
+                <ul class="listamq">
+                    <li>Visibilidad de elementos.</li>
+                    <li>Modificar el tamaño de un texto.</li>
+                    <li>Modificar el tamaño de una imagen.</li>
+                    <li>Modificar el margen y el espacio de elementos.</li>
+                  </ul>
+            </article>
+            <article>
+                <P id="txt3">
+                    Cuando no existía el uso de las media queries, se tenía que optar por tener dos versiones de una pagina web, una
+                    destinada para dispositivos de escritorio y otra diferente para móviles, lo cual por obvias razones era costoso
+                    para mantener en funcionamiento estas dos versiones de una misma página. Así que cuando se empezó a usar las
+                    media queries este problema era parte del pasado ya que mediante una serie de líneas de código las cuales
+                    hicieran que una pagina web se pudiese adaptar sin problema al tamaño tan variado de los dispositivos
+                    tecnológicos, resoluciones y orientaciones de dichos dispositivos <b>(Diseño Responsive)</b> y ademas las media
+                    queries se comenzaron a implementar por los navegadores en 2012 cuando llego el CSS3. <br>
+                  <div style="text-align: center" ;border="10" ;>
+                    <img src="LuisBacca/Imagenes/img5.png" style="border: 2px solid rgb(100, 255, 11);" width="60%;">
+                    <h6 style="text-align: center;">
+                      Imagen tomada de: <a href="https://hostingwebcloud.com/que-es-una-media-query/">
+                        https://hostingwebcloud.com/que-es-una-media-query/</a>
+                    </h6>
+                  </div>
+                  </P>
+                  <br><br>
+            </article>
+            <article>
+                <p id="txt4">
+                    Una media querie siempre comienza con esta sintaxis: @media, agregando una Mediatype.
+                    <br>
+                  <div style="text-align: center" ;border="10" ;>
+                    <img src="LuisBacca/Imagenes/img1.png" style="border: 2px solid rgb(0, 0, 0);" width="50%;">
+                  </div>
+                </p>
+                <h6 style="text-align: center;">
+                    Imagen tomada de: <a href="https://www.silocreativo.com/media-queries-css/">
+                      https://www.silocreativo.com/media-queries-css/</a>
+                </h6>
+                <p id="txt4">
+                    Se puede agrupar o excluir un mediatype específico haciendo uso de los operadores not y only.
+                    <br><br>
+                </p>
+            </article>
+            <article>
+                <h2 style="padding-left: 25%;" ;>Ejemplos:</h2>
+                <br>
+                <p style="text-align: center; color: rgb(221, 14, 14);" id="pie_imagen">
+                    <b>Ejecuta el CSS en pantalla a partir de 768 px en adelante.</b>
+                </p>
+                <div style="text-align: center" ;border="10" ;>
+                    <img src="LuisBacca/Imagenes/img2.png" style="border: 3px solid rgb(221, 14, 14);" width="50%;">
+                    <h6 style="text-align: center;">
+                        Imagen tomada de: <a href="https://javiervallejo.com/ejemplos-de-uso-media-query/">
+                        hhttps://javiervallejo.com/ejemplos-de-uso-media-query/</a>
+                    </h6>
+                    <br>
+
+                    <br><br>
+                    <p style="text-align: center; color: rgb(143, 33, 245);" id="pie_imagen">
+                        <b>Ejecuta el CSS en pantalla hasta resoluciones de 420px como máximo.</b>
+                    </p>
+                    <img src="LuisBacca/Imagenes/img3.png" style="border: 3px solid rgb(143, 33, 245);" width="50%;">
+                    <h6 style="text-align: center;">
+                    Imagen tomada de: <a href="https://javiervallejo.com/ejemplos-de-uso-media-query/">
+                        hhttps://javiervallejo.com/ejemplos-de-uso-media-query/</a>
+                    </h6>
+                    <br>
+
+                    <br><br>
+                    <p style="text-align: center; color: #026637;" id="pie_imagen"><b>Ejecuta el CSS para resoluciones entre 1023px
+                        y 1280 px.</b> </p>
+                        <img src="LuisBacca/Imagenes/img4.png" style="border: 3px solid #026637;" width="50%;">
+                        <h6 style="text-align: center;">
+                            Imagen tomada de: <a href="https://javiervallejo.com/ejemplos-de-uso-media-query/">
+                            hhttps://javiervallejo.com/ejemplos-de-uso-media-query/</a>
+                        </h6>
+                    </p>
+                </div>
+            </article>
+            <br><br>
+        </section>
+    </main>
+    <footer id="primerap">
+        <p class="pie_pagina">&copy Copyright. Grupo 16 UNAD. 
+            Fecha actualización 3/abril/2023</p>
+    </footer>
+</body>
+</html>

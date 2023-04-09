@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase_3</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="contenedor">
+    <header>
+        <h1> Fase 3 Diseño de sitios web UNAD Grupo 16</h1>
+    </header>
+    <nav>
+        <ul id="barra_horizontal">
+            <li class="izquierdo" id="one"> <a href="index.html"><h2 class="primero">Inicio</h2></a></li>   
+            <li class="izquierdo" id="two">               
+                <a href="#"><h2 class="segundo">Temas</h2></a>
+                <nav id="sub">
+                    <ul id="submenu1">
+                        <li class="submenu2">
+                            <a href="tema.html"><h2 class="selecto">Selectores CSS</h2></a>
+                            <a href="tema_luisbacca.html"><h2 class="selecto">Media Queries</h2></a>
+                            <a href="tema_johnarturo.html"><h2 class="selecto">CSS Box Model</h2></a>
+                            <a href="tema_joseleon.html"><h2 class="selecto">Flex Box</h2></a>
+                        </li>
+                    </ul>   
+                </nav>
+            </li>
+            <li class="izquierdo" id="three"> <a href="equipo.html"><h2 class="tercero">Equipo</h2></a></li>
+        </ul>
+    </nav>
+    <aside>
+       <ul id="barra vertical">
+        <li id="enlace1" class="vertical"><a href="index.html"><h3 class="inicio">Inicio</h3> </a></li>
+        <li id="enlace2" class="vertical"><a href="#"><h3 class="audios">Audios</h3> </a>
+            <nav id="sub2">
+                <ul id="submenu12">
+                    <li class="submenu22">
+                        <a href="audio_tema.html"><h2 class="edison">Edison Botina</h2></a>
+                        <a href="audio_tema_luisbacca.html"><h2 class="edison">Luis Bacca</h2></a>
+                        <a href="audio_tema_johnarturo.html"><h2 class="edison">Jhon Arturo</h2></a>
+                        <a href="audio_temaj_joseleon.html"><h2 class="edison">José Leon</h2></a>
+                    </li>
+                </ul>   
+            </nav>
+        </li>
+        <li id="enlace3" class="vertical"><a  href="equipo.html"><h3 class="nosotros">Nosotros</h3> </a></li>
+
+       </ul>
+    </aside>
+    <main>
+        <section>
+            <article>
+                <h1 class="grupo1">Introducción al modelo de caja básico de CSS</h1>
+            </article>
+            <article>
+                <p>
+                    Al maquetar un documento, el motor de renderizado del navegador representa cada 
+                    elemento como una caja rectangular, conforme al estándar del modelo de caja básico de 
+                    CSS. CSS determina el tamaño, la posición y las propiedades (color, fondo, tamaño del 
+                    borde, etc.) de estas cajas. Cada caja está compuesta de cuatro partes (o áreas), 
+                    definidas por sus respectivos límites: límite de contenido (content edge) , 
+                    límite de relleno (padding edge) , límite de borde (border edge) y límite de margen 
+                    (margin edge).
+                    <br>
+                    <br> 
+                    <h3 class="subtitulo">Área de contenido (content area).</h3> 
+                        El área de contenido o content area, delimitada por el límite de contenido (Content edge en la 
+                        imagen), contiene el contenido "real" del elemento, como texto, una imagen o un 
+                        reproductor de video. Sus dimensiones son "content width" o ("content-box width") 
+                        que hace referencia al ancho del contenido, y "content height" o ("content-box height") 
+                        que hace referencia al alto. A menudo, tiene un color o una imagen de fondo. 
+                        Si la propiedad box-sizing está definida como content-box (que es el valor por defecto) 
+                        y el elemento es un "elemento de bloque", el tamaño del área de contenido puede definirse 
+                        explícitamente con las propiedades width , min-width , max-width (en-US) , height , 
+                        min-height y max-height . 
+                        <br>
+                        <br>
+                    <h3 class="subtitulo">Área de relleno (padding area).</h3>
+                        El área de relleno o padding area, delimitada por el límite de relleno (Padding Edge 
+                        en la imagen), extiende el área de contenido para incluir el relleno del elemento. 
+                        Sus dimensiones son "padding-box width" para el ancho y "padding-box height" para el alto.
+                        El tamaño del relleno viene determinado por las propiedades padding-top , 
+                        padding-right (en-US) , padding-bottom , padding-left (en-US) y la propiedad resumida 
+                        padding .
+                        <br>
+                        <br>
+                    <h3 class="subtitulo">Área de borde (border area).</h3>
+                        El área de borde o border area, delimitada por el límite de borde (Border Edge en 
+                        la imagen), extiende el área de relleno para incluir los bordes del elemento. 
+                        Sus dimensiones son "border-box width" para el ancho y "border-box height" para el 
+                        alto. El espesor de los bordes está determinado por la propiedad border-width y la 
+                        propiedad resumida border . Si la propiedad box-sizing se establece como border-box, 
+                        el tamaño del área de borde puede definirse explícitamente con los parámetros width , 
+                        min-width , max-width (en-US) , height , min-height , max-height. Cuando hay un 
+                        fondo background-color o background-image establecido en una caja, éste se extiende 
+                        hasta el límite exterior del borde (es decir, se extiende por debajo del borde en 
+                        el orden Z). Este comportamiento, que es el que tiene por defecto, puede ser 
+                        alterado con la propiedad CSS background-clip.
+                        <br>
+                        <br>
+                    <h3 class="subtitulo">Área de margen (margin area).</h3>
+                        El área de margen o margin area, delimitada por el límite de margen (Margin edge en 
+                        la imagen), extiende el área de borde para incluir un área vacía, utilizada para 
+                        separar al elemento del resto de sus vecinos. Sus dimensiones son "margin-box width"
+                        para el ancho y "margin-box height" para el alto. El tamaño del área de margen 
+                        está determinado por las propiedades margin-top (en-US) , margin-right , 
+                        margin-bottom , margin-left (en-US) y la propiedad resumida margin . Cuando se 
+                        produce un colapso de margen, el área de margen no está claramente definida ya que 
+                        los márgenes se comparten entre cajas. Por último, tenga en cuenta que para los 
+                        elementos en línea no modificados, la cantidad de espacio ocupado (la contribución 
+                        a la altura de la línea) está determinada por la propiedad line-height , aunque los 
+                        bordes y el relleno sigan apareciendo alrededor del contenido.
+                        Fuente: <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">
+                        https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model</a>
+                        <br>
+                        <br>
+                    <img src="JhonArturo/img/cssbox.png">    
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer id="primerap">
+        <p class="pie_pagina">&copy Copyright. Grupo 16 UNAD. 
+            Fecha actualización 3/abril/2023</p>
+    </footer>
+</body>
+</html>
