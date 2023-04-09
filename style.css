@@ -194,13 +194,18 @@ h3{
 }
 main{
     grid-area: S;
-    background-color: #9be4ee;
+    background-color: #db720f;
     border-radius: 20px;
     margin:0.4cm;
     padding: 1%;
     outline: 6px ridge #FF9F29;
     border-color: #011820;
     border-style: solid;
+}
+#inici{
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
 }
 .flexBoxx{
     display:flex;
@@ -211,10 +216,7 @@ main{
     color: #011216;
     margin-bottom: 10px;
 }
-#mqfont{
-    background: #9be4ee;
-}
-.CSSSEL{
+.C  SSSEL{
     color: #011216;
     margin-bottom: 10px;
 }
@@ -234,8 +236,16 @@ main{
 #johnalexander{
     background: #19bbc4;
 }
+.imgjohn{
+    width: 300px;
+    height: 225px;
+}
 #joseyohon{
     background: #cefaaa;
+}
+.imgjose{
+    width: 300px;
+    height: 225px;
 }
 footer{
     grid-area: O;
