@@ -227,6 +227,16 @@ main{
 .subtitulo{
     color:#011820;
 }
+#luisalexander{
+    background: #94dde0;
+}
+
+#johnalexander{
+    background: #19bbc4;
+}
+#joseyohon{
+    background: #cefaaa;
+}
 footer{
     grid-area: O;
     background-color:#B8621B;
