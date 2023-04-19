@@ -247,6 +247,61 @@ main{
     width: 300px;
     height: 225px;
 }
+#tituloedi{
+    background-color: #0423ac;
+    outline: 4px ridge #eff3f5;
+    border-radius: 10px;
+    color: #eff3f5;
+    -webkit-text-stroke: 0.1px #011820;
+}
+#fila{
+    margin-top: 2cm;
+    
+}
+#columna1{
+    outline: 2px ridge #131312;
+    border-radius: 5px;
+    background: #FF9F29;
+    
+}
+#columna2{
+    outline: 2px ridge #131312;
+    border-radius: 5px;
+    background: #FF9F29;
+    text-align: center;
+}
+#columna3{
+    text-align: center;
+}
+#queson{
+    background-color: #6c0879;
+    border-top-right-radius: 5px;
+}
+#selecuniv{
+    background-color: #6c0879;
+    border-top-right-radius: 5px;
+
+    
+}
+.parrafos{
+    margin: 0.2cm;
+}
+.imgedison{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    outline: 2px ridge #011216;
+    margin-right: 0.4cm;
+}
+#edisonprinci{
+    background: #f0e294;
+}
+#mockup1{
+    width: 900px;
+    height: 800px;
+    text-align: center;
+    
+}
 footer{
     grid-area: O;
     background-color:#B8621B;
@@ -274,7 +329,7 @@ footer{
     padding: 1%;
 }
 #primerap{
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 #edisonimg{

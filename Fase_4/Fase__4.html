@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase_4_Quiz_BoxModel</title>
+    <link rel="stylesheet" href="/style.css"></link>
+    <link rel="stylesheet" href="/Fase_4/fase4.css"></link>
+</head>
+<body class="contenedor">
+    <header>
+        <h1> Fase 3 Diseño de sitios web UNAD Grupo 16</h1>
+    </header>
+    <nav>
+        <ul id="barra_horizontal">
+            <li class="izquierdo" id="one"> <a href="/index.html"><h2 class="primero">Inicio</h2></a></li>   
+            <li class="izquierdo" id="two">               
+                <a href="#"><h2 class="segundo">Temas</h2></a>
+                <nav id="sub">
+                    <ul id="submenu1">
+                        <li class="submenu2">
+                            <a href="/tema_edisonB.html"><h2 class="selecto">Selectores CSS</h2></a>
+                            <a href="/tema_luisbacca.html"><h2 class="selecto">Media Queries</h2></a>
+                            <a href="/tema_johnarturo.html"><h2 class="selecto">CSS Box Model</h2></a>
+                            <a href="/tema_joseleon.html"><h2 class="selecto">Flex Box</h2></a>
+                        </li>
+                    </ul>   
+                </nav>
+            </li>
+            <li class="izquierdo" id="three"> <a href="/equipo.html"><h2 class="tercero">Equipo</h2></a></li>
+            <li class="izquierdo" id="twoq">               
+                <a href="#"><h2 class="segundo">Quiz</h2></a>
+                <nav id="sub1">
+                    <ul id="submenu1">
+                        <li class="submenu222">
+                            <a href="#"><h2 class="selecto1">Selectores CSS</h2></a>
+                            <a href="#"><h2 class="selecto1">Media Queries</h2></a>
+                            <a href="/Fase_4/Fase__4.html"><h2 class="selecto1">CSS Box Model</h2></a>
+                            <a href="#"><h2 class="selecto1">Flex Box</h2></a>
+                        </li>
+                    </ul>   
+                </nav>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+       <ul id="barra vertical">
+        <li id="enlace1" class="vertical"><a href="/index.html"><h3 class="inicio">Inicio</h3> </a></li>
+        <li id="enlace2" class="vertical"><a href="#"><h3 class="audios">Audios</h3> </a>
+            <nav id="sub2">
+                <ul id="submenu12">
+                    <li class="submenu22">
+                        <a href="/audio_tema.html"><h2 class="edison">Edison Botina</h2></a>
+                        <a href="/audio_tema_luisbacca.html"><h2 class="edison">Luis Bacca</h2></a>
+                        <a href="/audio_tema_johnarturo.html"><h2 class="edison">Jhon Arturo</h2></a>
+                        <a href="/audio_temaj_joseleon.html"><h2 class="edison">José Leon</h2></a>
+                    </li>
+                </ul>   
+            </nav>
+        </li>
+        <li id="enlace3" class="vertical"><a  href="/equipo.html"><h3 class="nosotros">Nosotros</h3> </a></li>
+
+       </ul>
+    </aside>
+    <main id="box_model">
+        <section>
+            <article>
+                <br>
+                <h1 id="resultado">Cuestionario sobre CSS Box Model</h1>
+                <br>
+                <div>
+                    <form name="formulario">
+                        <div class="tabla1">
+                            <table >
+                                <tr>
+                                    <h3 id="precuest">Primera pregunta: </h3> 
+                                <p class="parrafo1">
+                                    Al maquetar un documento, 
+                                    el motor de renderizado del navegador representa cada elemento como una 
+                                    caja rectangular, conforme al estándar del modelo de caja básico de CSS.
+                                    Con CSS se puede determinar las propiedades de dichas cajas, por lo cual
+                                    tiene cuatro partes definidas por sus límites. Estos cuatro límites hacen 
+                                    referencia a:
+                                </p>
+                                <br>
+                                </tr>  
+                                <tr>
+                                <p class="tabla11">
+                                    <input type="radio" name="r1" value="a" id="cero1">a. content area, padding area, border area, margin area. <br>
+                                    <input type="radio" name="r1" value="b" id="cero2">b. Límite de pixel, límite offside, límite react, límite de foot. <br>
+                                    <input type="radio" name="r1" value="c" id="cero3">c. Ancho, alto, profundidad, borde. <br>
+                                </p>
+                                
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div class="tabla1">
+                            <br><h3 id="precuest">Segunda pregunta:</h3> 
+                            <p>
+                                Si en esta parte se encuentra el contenido real, donde se encuentra una imagen,
+                                texto o reproductor de video, y sus dimensiones son content width o content heigth,
+                                ¿A cuál parte o area de Box model estamos especificando?
+                            </p> 
+                            <br>
+            
+                            <p class="tabla11">
+                                <input type="radio" name="r2" value="a" id="cero4">a. padding area. <br>
+                                <input type="radio" name="r2" value="b" id="cero5">b. margin area. <br>
+                                <input type="radio" name="r2" value="c" id="cero6">c. content area. <br>
+                            </p>
+                        </div><br>
+                        
+                        <div class="tabla1">
+                            <br><h3 id="precuest">Tercera pregunta: </h3>
+                            <p>
+                                Si queremos extender el área de nuestro contenido e incluir un relleno
+                                por ejemplo de un color de fondo, ¿Qué propiedad de Box model debemos utilizar?
+                            </p>
+                            <br>
+            
+                            <p class="tabla11">
+                                <input type="radio" name="r3" value="a" id="cero7" >a. margin area. <br>
+                                <input type="radio" name="r3" value="b" id="cero8">b. padding area. <br>
+                                <input type="radio" name="r3" value="c" id="cero9">c. border area. <br>
+                            </p>
+                        </div><br>
+                        
+
+                        <div class="tabla1">
+                            <br><h3 id="precuest">Cuarta pregunta: </h3>
+                            <P >
+                                Al intentar extender el área de relleno para incluir un borde al elemento, 
+                                ¿Con cuál propiedad de border se haría dicha petición si se quiere que haya
+                                más espesor en la líneas?
+                            </P>
+                            <br>
+            
+                        <p class="tabla11">
+                            <input type="radio" name="r4" value="a" id="cero10" >a. El espesor de los bordes está determinado 
+                            por la propiedad border-width y la propiedad resumida border.  <br>
+                        <input type="radio" name="r4" value="b" id="cero11" >b. El espesor de los bordes está determinado
+                             por la propiedad border-np y la propiedad resumida border-in.  <br>
+                        <input type="radio" name="r4" value="c" id="cero12" >c. El espesor de los bordes está determinado 
+                            por la propiedad border-botng y la propiedad resumida width.  <br>
+                        </p>
+                        </div><br>
+                        
+
+                       <div class="tabla1">
+                        <h3 id="precuest">Quinta pregunta: </h3>
+                        <p>
+                            La siguiente área especifica que se puede separar un elemento del resto de sus vecinos, donde
+                            extiende el área de borde para incluir un área vacía, ¿De cuál parte de Box Model se está 
+                            especificando?
+                        </p>
+                        <p class="tabla11">
+                            <input type="radio" name="r5" value="a" id="cero13" >a. padding area.<br>
+                            <input type="radio" name="r5" value="b" id="cero14" >b. margin area. <br>
+                            <input type="radio" name="r5" value="c" id="cero15" >c. south area. <br>
+                        </p>
+                            
+                       </div><br>
+            
+                        <input id="botonenvi" type="button" value="Enviar" onclick="procesarRespuestas()"> 
+                        <input id="botonenvi" type="button" value="Repetir" 
+                            onclick="limpiarSeleccion('r1'), limpiarSeleccion('r2'),
+                                    limpiarSeleccion('r3'), limpiarSeleccion('r4')
+                                    ,limpiarSeleccion('r5')"> <!--dando click se iniciara la función
+                                    constante seleccionando cada nombre en específico para que
+                                    los seleccione a todos-->  
+                    </form>
+                </div>
+                <br>
+                <br>
+                <h3 id="resultado1">aquí se verá su resultado después de dar clic al botón "enviar"</h3>
+                <br>
+                <br>
+                <script src="/Fase_4/js/script.js"></script>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p class="pie_pagina" id="dospie">&copy Copyright. Grupo 16 UNAD. 
+            Fecha actualización 18/abril/2023</p>
+    </footer>
+</body>
+</html>
