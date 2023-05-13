@@ -67,6 +67,29 @@ function procesarRespuestas3() {
     return false;
 
 }
+function procesarRespuestas4() {
+    let total = 5
+    let puntos= 0;
+    
+
+    let myForm = document.forms["formulario"];
+    let RespuestasCorrectas = ["c","a","b","b","c"];
+
+    for (let i = 1; i <= total; i++) {
+        if (myForm["r"+i].value == null || 
+            myForm["r"+i].value == '') {
+            alert('Favor responder todas las preguntas');
+            return false;
+        } else {
+            if (myForm["r" + i].value === RespuestasCorrectas[i - 1])
+            puntos ++;
+        }
+    }
+    let resultado1 = document.getElementById('resultado1')
+    resultado1.innerHTML='Obtuviste '+ puntos +' puntos de '+ total +' posibles';
+    return false;
+
+}
 
 const limpiarSeleccion = (name) => {//cada vez que se invoque se limpiará el radio button unicamente con el mismo nombre.
     const radioBtns = document.querySelectorAll("input[type='radio'][name='"+ name + "']");

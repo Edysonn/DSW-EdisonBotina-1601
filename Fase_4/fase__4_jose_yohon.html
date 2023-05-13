@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fase_4_Quiz__BoxModel</title>
+    <title>Fase_4_Quiz_FlexBox</title>
     <link rel="stylesheet" href="style.css"></link>
     <link rel="stylesheet" href="fase4.css"></link>
 </head>
@@ -37,7 +37,7 @@
                             <a href="fase__4_johnarturo.html"><h2 class="selecto1">Selectores CSS</h2></a>
                             <a href="fase__4_luisbacca.html"><h2 class="selecto1">Media Queries</h2></a>
                             <a href="fase__4.html"><h2 class="selecto1">CSS Box Model</h2></a>
-                            <a href="fase__4_jose_yohon.html"><h2 class="selecto1">Flex Box</h2></a>
+                            <a href="#"><h2 class="selecto1">Flex Box</h2></a>
                         </li>
                     </ul>   
                 </nav>
@@ -67,102 +67,89 @@
         <section>
             <article>
                 <br>
-                <h1 id="resultado">Cuestionario sobre CSS Box Model</h1>
+                <h1 id="resultado">Responda a las siguientes preguntas </h1>
                 <br>
                 <div>
                     <form name="formulario">
                         <div class="tabla1">
                             <table >
                                 <tr>
-                                    <h3 id="precuest">Primera pregunta: </h3> 
+                                    <h3 id="precuest">1. los flex ítems se insertan en el contenedor empezando por el lado:</h3> 
                                 <p class="parrafo1">
-                                    Al maquetar un documento, 
-                                    el motor de renderizado del navegador representa cada elemento como una 
-                                    caja rectangular, conforme al estándar del modelo de caja básico de CSS.
-                                    Con CSS se puede determinar las propiedades de dichas cajas, por lo cual
-                                    tiene cuatro partes definidas por sus límites. Estos cuatro límites hacen 
-                                    referencia a:
+                                   
                                 </p>
                                 <br>
                                 </tr>  
                                 <tr>
                                 <p class="tabla11">
-                                    <input type="radio" name="r1" value="a" id="cero1">a. content area, padding area, border area, margin area. <br>
-                                    <input type="radio" name="r1" value="b" id="cero2">b. Límite de pixel, límite offside, límite react, límite de foot. <br>
-                                    <input type="radio" name="r1" value="c" id="cero3">c. Ancho, alto, profundidad, borde. <br>
+                                    <input type="radio" name="r1" value="a" id="cero1">a. end  <br>
+                                    <input type="radio" name="r1" value="b" id="cero2"> b. startes <br>
+                                    <input type="radio" name="r1" value="c" id="cero3"> c. start  <br>
                                 </p>
                                 
                                 </tr>
                             </table>
                         </div><br>
                         <div class="tabla1">
-                            <br><h3 id="precuest">Segunda pregunta:</h3> 
+                            <br><h3 id="precuest">2.Líneas flex se llenan con ítems y se agregan al contenedor, comenzando desde el lado cross start del flex container hacia el lado :</h3> 
                             <p>
-                                Si en esta parte se encuentra el contenido real, donde se encuentra una imagen,
-                                texto o reproductor de video, y sus dimensiones son content width o content heigth,
-                                ¿A cuál parte o area de Box model estamos especificando?
+                            
                             </p> 
                             <br>
             
                             <p class="tabla11">
-                                <input type="radio" name="r2" value="a" id="cero4">a. padding area. <br>
-                                <input type="radio" name="r2" value="b" id="cero5">b. margin area. <br>
-                                <input type="radio" name="r2" value="c" id="cero6">c. content area. <br>
+                                <input type="radio" name="r2" value="a" id="cero4"> a. cross end  <br>
+                                <input type="radio" name="r2" value="b" id="cero5"> b. cross star  <br>
+                                <input type="radio" name="r2" value="c" id="cero6"> c. ninguna de las anteriores  <br>
                             </p>
                         </div><br>
                         
                         <div class="tabla1">
-                            <br><h3 id="precuest">Tercera pregunta: </h3>
+                            <br><h3 id="precuest">3.que es un Flex Ítem?:</h3>
                             <p>
-                                Si queremos extender el área de nuestro contenido e incluir un relleno
-                                por ejemplo de un color de fondo, ¿Qué propiedad de Box model debemos utilizar?
+                               
                             </p>
                             <br>
             
                             <p class="tabla11">
-                                <input type="radio" name="r3" value="a" id="cero7" >a. margin area. <br>
-                                <input type="radio" name="r3" value="b" id="cero8">b. padding area. <br>
-                                <input type="radio" name="r3" value="c" id="cero9">c. border area. <br>
+                                <input type="radio" name="r3" value="a" id="cero7" > a. son los link  <br>
+                                <input type="radio" name="r3" value="b" id="cero8"> b. son elementos secundarios del flex container  <br>
+                                <input type="radio" name="r3" value="c" id="cero9"> c. son las dos direcciones básicas que existen en un Flex <br>
                             </p>
                         </div><br>
                         
 
                         <div class="tabla1">
-                            <br><h3 id="precuest">Cuarta pregunta: </h3>
+                            <br><h3 id="precuest">4.que es un flex-flow ?:</h3>
                             <P >
-                                Al intentar extender el área de relleno para incluir un borde al elemento, 
-                                ¿Con cuál propiedad de border se haría dicha petición si se quiere que haya
-                                más espesor en la líneas?
+                                
                             </P>
                             <br>
             
                         <p class="tabla11">
-                            <input type="radio" name="r4" value="a" id="cero10" >a. El espesor de los bordes está determinado 
-                            por la propiedad border-width y la propiedad resumida border.  <br>
-                        <input type="radio" name="r4" value="b" id="cero11" >b. El espesor de los bordes está determinado
-                             por la propiedad border-np y la propiedad resumida border-in.  <br>
-                        <input type="radio" name="r4" value="c" id="cero12" >c. El espesor de los bordes está determinado 
-                            por la propiedad border-botng y la propiedad resumida width.  <br>
+                            <input type="radio" name="r4" value="a" id="cero10" > a. los ítems se alinean a lo largo del borde de inicio  <br>
+                        <input type="radio" name="r4" value="b" id="cero11" > b. es una propiedad shorthand  <br>
+                        <input type="radio" name="r4" value="c" id="cero12" > c. los ítems se alinean a lo largo del borde final   <br>
                         </p>
                         </div><br>
                         
 
                        <div class="tabla1">
-                        <h3 id="precuest">Quinta pregunta: </h3>
+                        <h3 id="precuest">5. los ítems están alineados a lo largo del borde izquierdo del contenedor: </h3>
                         <p>
                             La siguiente área especifica que se puede separar un elemento del resto de sus vecinos, donde
                             extiende el área de borde para incluir un área vacía, ¿De cuál parte de Box Model se está 
                             especificando?
                         </p>
                         <p class="tabla11">
-                            <input type="radio" name="r5" value="a" id="cero13" >a. padding area.<br>
-                            <input type="radio" name="r5" value="b" id="cero14" >b. margin area. <br>
-                            <input type="radio" name="r5" value="c" id="cero15" >c. south area. <br>
+                            <input type="radio" name="r5" value="a" id="cero13" > a. link <br>
+                            <input type="radio" name="r5" value="b" id="cero14" > b. src  <br>
+                            <input type="radio" name="r5" value="c" id="cero15" > c. left  <br>
                         </p>
                             
                        </div><br>
             
-                        <input id="botonenvi" type="button" value="Enviar" onclick="procesarRespuestas()"> 
+                        <input id="botonenvi" type="button" value="Enviar" onclick="procesarRespuestas4()"> 
                         <input id="botonenvi" type="button" value="Repetir" 
                             onclick="limpiarSeleccion('r1'), limpiarSeleccion('r2'),
                                     limpiarSeleccion('r3'), limpiarSeleccion('r4')
