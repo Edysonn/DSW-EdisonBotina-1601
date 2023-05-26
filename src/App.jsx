@@ -23,11 +23,16 @@ function App() {
         <h4>Luis Alejandro Bacca Rodríguez</h4>
         <h4>John Alexander Arturo Quintero</h4>
         <h4>José Yohón Jairo Leon Mavisoy</h4>
+        <h4>Joseph David Coral Solarte</h4>
         <h4>Grupo 16</h4>
       </div>
+      <div>
+    
       <p>
-        <a href='inicio.html'>Clic aquí para ir al proyecto</a>
+        <a href='inicio.html'><h5>Clic aquí para ir al proyecto</h5></a>
       </p>
+      </div>
+      
     </>
   )
 }
