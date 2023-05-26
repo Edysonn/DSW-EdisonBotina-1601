@@ -25,7 +25,7 @@ function App() {
         <h4>José Yohón Jairo Leon Mavisoy</h4>
         <h4>Grupo 16</h4>
       </div>
-      <p className="read-the-docs">
+      <p>
         <a href='index.html'>Clic aquí para ir al proyecto</a>
       </p>
     </>
