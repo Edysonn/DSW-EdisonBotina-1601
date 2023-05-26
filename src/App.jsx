@@ -26,7 +26,7 @@ function App() {
         <h4>Grupo 16</h4>
       </div>
       <p>
-        <a href='index.html'>Clic aquí para ir al proyecto</a>
+        <a href='inicio.html'>Clic aquí para ir al proyecto</a>
       </p>
     </>
   )
