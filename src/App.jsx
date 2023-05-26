@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+    
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -24,7 +25,6 @@ function App() {
         <h4>John Alexander Arturo Quintero</h4>
         <h4>José Yohón Jairo Leon Mavisoy</h4>
         <h4>Joseph David Coral Solarte</h4>
-        <h4>Grupo 16</h4>
       </div>
       <div>
     
