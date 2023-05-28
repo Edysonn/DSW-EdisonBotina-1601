@@ -4,9 +4,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(51, 46, 5, 0.938);
-  background-color: #242424;
-  background-image: url("public/img/Presentacion1.png");
+  color: rgba(51, 46, 5, 0.486);
+  background-color: #242424ce;
+  background-image: url('public/img/Presentacion1.png');
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
